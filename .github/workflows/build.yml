@@ -30,5 +30,5 @@ jobs:
         context: .
         push: true
         tags: |
-          ghcr.io/opengisch/qgis-server-bafu-sam-debug:latest
-          ghcr.io/opengisch/qgis-server-bafu-sam-debug:commit-${{ github.sha }}
+          ghcr.io/opengisch/rgdz.qgis-server:latest
+          ghcr.io/opengisch/rgdz.qgis-server:commit-${{ github.sha }}
