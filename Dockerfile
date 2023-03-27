@@ -33,6 +33,8 @@ ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
 RUN chmod +x /tini
 
 COPY ./start.sh /usr/local/bin/start.sh
+ADD qgis-server-nginx.conf /etc/nginx/nginx.conf
+
 
 ENTRYPOINT ["/tini", "-p", "SIGTERM", "-g", "--"]
 
